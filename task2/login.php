@@ -12,7 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $user = $result->fetch_assoc();
 
     if ($user) {
-        $_SESSION['username'] = $username;
+        $_SESSION['username'] = $user["username"];
         header('Location: welcome.php');
         exit();
     } else {

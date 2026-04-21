@@ -58,6 +58,12 @@ DELETE FROM `task3` WHERE id=1
 ALTER TABLE `task3`
   ADD PRIMARY KEY (`id`);
 
+ALTER TABLE `task3`
+  ADD `abc` VARCHAR(255)
+
+ALTER TABLE `task3`
+  DROP `abc`
+
 --
 -- AUTO_INCREMENT for dumped tables
 --

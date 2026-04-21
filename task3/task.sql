@@ -36,6 +36,18 @@ CREATE TABLE `task3` (
   `weight` varchar(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+INSERT INTO `task3`(
+  `Receiving Date`,
+  `Tracking Number`,
+  `product Name`,
+  `CBM`,
+  `weight`  
+) VALUES('2025/03/03','dasdasd','asdasdasd','asdasd','asd');
+
+UPDATE `task3` SET `CBM`='1211' WHERE id=1
+
+DELETE FROM `task3` WHERE id=1 
+
 --
 -- Indexes for dumped tables
 --
